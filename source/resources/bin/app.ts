@@ -19,4 +19,4 @@ import { CLPrimary } from "../lib/cl-primary-stack";
 const app = new App();
 
 // Primary Stack
-new CLPrimary(app, "CL-PrimaryStack");
+new CLPrimary(app, "CL-PrimaryStack", "aws-us-gov");

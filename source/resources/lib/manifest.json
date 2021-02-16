@@ -4,12 +4,12 @@
   "solutionName": "%%SOLUTION_NAME%%",
   "templateVersion": "2010-09-09",
   "solutionVersion": "%%VERSION%%",
-  "sendMetric": "Yes",
+  "sendMetric": "No",
   "streamName": "CL-KinesisStream",
   "firehoseName": "CL-Firehose",
   "cwDestinationName": "CL-Destination",
   "firehosePolicy": "CL-Firehose-Policy",
-  "jumpboxInstanceType": "t3.micro",
+  "jumpboxInstanceType": "t3.small",
   "esdomain": {
     "vpcCIDR": "10.0.0.0/16",
     "masterNodes": 3

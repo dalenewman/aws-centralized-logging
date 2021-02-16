@@ -104,13 +104,13 @@ export class CLPrimary extends Stack {
   readonly region: string;
   readonly partn: string;
 
-  constructor(scope: App, id: string) {
+  constructor(scope: App, id: string, partition: string) {
     super(scope, id);
 
     const stack = Stack.of(this);
     this.account = stack.account; // Returns the AWS::AccountId for this stack (or the literal value if known)
     this.region = stack.region; // Returns the AWS::Region for this stack (or the literal value if known)
-    this.partn = stack.partition; // Returns the AWS::Partition for this stack
+    this.partn = partition; // Returns the AWS::Partition for this stack
 
     //=========================================================================
     // Parameter
